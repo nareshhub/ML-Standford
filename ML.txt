@@ -1,0 +1,52 @@
+DEFintion of ML
+The field of study that gives computers the ablitiy to learn without being explicitly programmed
+WHY ML
+web search engine in google - how to rank webpages
+spam/not spam email
+EX
+1. database mining - mine the large data sets of web click data to serve the customers better
+2. Applications cant program by hand - NLP
+3. Self-customizing programs - netflix product recommendation
+
+SUPERVISED learning (Regression,Classification)
+With the given dataset , can expect what the output should look like ,having the idea that there is  a relationship b/w input and output
+REGRESSION - predicting results within a continuous output, meaning trying to map input variables to some continuous function
+Ex- House price prediction from the sample data - right answers given as input 
+CLASSIFICATION - predicting results in a discrete output, meaning trying to map input variables to discrete categories
+Ex- discrete valued output (0 or 1) - Breast Cancer (malignant,benign)
+UN SUPERVISED learning (Clustering,Associative memory)
+With the given dataset , with little or no idea on what our results should look like, can derive structures from the data
+CLUSTERING - group the data based on the feature
+ASSOCIATIVE MEMORY - estimate mapping function from patient characteristics into illness based on the past patient experiences
+
+LINEAR Regression with Multiple Variables
+BELOW two algorithms used for predicting house price 
+m is training data , n is number of features (house size,no of bedrooms)
+Gradient Descent algorithm - need to chose alpha , need to find global optimum (where cost is less) , good for n > 100000
+Normal Equation algorithm - no need for alpha and cost parameters , good for n < 10000
+
+OCTAVE/MATLAB
+eye(3) - gives 3x3 identity matrix
+size(a) - gives rowsxcolumns of a matrix  (5x1 matrix)
+length(a) - gives large dimension of matrix/vector (5)
+pwd , cd ,ls , who (variables in the current environment) ,whos (detailed view with size/memory of variable)
+clear a; (clear the variable from the environment)
+a = abc(1:10) ; save hello.mat a;
+save hello.txt a -ascii % save as text (ASCII)
+a(3,2) - row 3 column 2 value of a matrix ; a(2,:) - every element along that row ; a([1 3],:)
+a = [a,[10;11;12]]
+a(:) - put all elements into a single vector ; c=[a b] or [a,b] - concatenate two matrices ; c=[a;b] - put b on bottom of a 
+a.*b - element wise ; a.^2 ; 1 ./a
+a' - transpose ; [value,index] = max(a) ; find(a<3) - return rows where a < 3
+sum,prod,floor,ceil ;max(a,[],1) - take max per column wise
+pinv(a) - inverse of a
+print -dpng 'plot.png' ; subplot(1,2,1) ;axis([0.5 1 -1 1])
+imagesc(a), colorbar, colormap gray;
+for i=1:10, v(i)=2^i; end;
+addpath('location') - will add this path to the environment
+
+Logistic Regression & Regularization
+Logistic Regression algorithm is used for Classification problem
+
+NEURAL NETWROKS
+algorithms that try to mimic the brain
